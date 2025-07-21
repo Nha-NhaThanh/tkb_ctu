@@ -1,0 +1,429 @@
+<!--CODE CUA CHAPGPT-->
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chọn nhiều nhóm lớp</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 30px;
+      background-color: #f9f9f9;
+    }
+
+    h2 {
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    .row {
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    input[type="text"],
+    select {
+      padding: 8px 10px;
+      font-size: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      min-width: 200px;
+    }
+
+    select {
+      min-width: 160px;
+    }
+
+    button {
+      padding: 8px 14px;
+      font-size: 15px;
+      border: none;
+      border-radius: 6px;
+      background-color: #3498db;
+      color: white;
+      transition: background-color 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #2980b9;
+    }
+
+    button[onclick*="xoaTatCa"] {
+      background-color: #e74c3c;
+    }
+
+    button[onclick*="xoaTatCa"]:hover {
+      background-color: #c0392b;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      text-align: center;
+      table-layout: fixed;
+      margin-top: 15px;
+      background-color: #fff;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px 6px;
+      word-wrap: break-word;
+    }
+
+    th {
+      background-color: #f0f0f0;
+      font-weight: 600;
+    }
+
+    td {
+      height: 60px;
+      font-size: 14px;
+      vertical-align: top;
+    }
+
+    td div {
+      margin-bottom: 4px;
+    }
+
+    .info {
+      background-color: #ecf0f1;
+      padding: 8px 10px;
+      margin-top: 5px;
+      border-left: 4px solid #3498db;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Tra cứu nhóm lớp cho nhiều học phần</h2>
+
+  <div id="container">
+    <div class="row">
+      <input type="text" placeholder="Nhập mã học phần " oninput="capNhatDropdown(this)">
+      <select>
+        <option value="">-- Chọn nhóm --</option>
+      </select>
+    </div>
+  </div>
+
+  <button onclick="themDong()">Thêm học phần</button>
+  <button onclick="xoaTatCa()" style="margin-top: 20px;">Xóa toàn bộ thời khóa biểu</button>
+  <button onclick="sinhTatCaLich()">Sinh tất cả lịch hợp lệ</button>
+
+  <div id="chonLich" style="margin-top: 15px;"></div>
+
+  <h2>Thời khóa biểu</h2>
+  <table id="tkb">
+    <thead>
+      <tr>
+        <th>Tiết</th>
+        <th>Thứ 2</th>
+        <th>Thứ 3</th>
+        <th>Thứ 4</th>
+        <th>Thứ 5</th>
+        <th>Thứ 6</th>
+        <th>Thứ 7</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script>
+    const tbody = document.querySelector("#tkb tbody");
+
+    function forEachCell(callback) {
+      for (let tiet = 1; tiet <= 9; tiet++) {
+        for (let thu = 2; thu <= 7; thu++) {
+          const id = `t${thu}t${tiet}`;
+          const cell = document.getElementById(id);
+          if (cell) callback(cell, thu, tiet);
+        }
+      }
+    }
+
+    for (let tiet = 1; tiet <= 9; tiet++) {
+      const tr = document.createElement("tr");
+      const tdTiet = document.createElement("td");
+      tdTiet.textContent = `Tiết ${tiet}`;
+      tr.appendChild(tdTiet);
+
+      for (let thu = 2; thu <= 7; thu++) {
+        const td = document.createElement("td");
+        td.id = `t${thu}t${tiet}`;
+        tr.appendChild(td);
+      }
+
+      tbody.appendChild(tr);
+    }
+
+    let data = [];
+
+    window.addEventListener("DOMContentLoaded", () => {
+      fetch("./data.csv")
+        .then(res => res.text())
+        .then(csv => {
+          const lines = csv.trim().split("\n").slice(1);
+          data = lines.map(row => {
+            const [maHP, maLop, thu, tiet, phong, gv, siSo] = row.split(",").map(s => s.trim());
+            return { maHP, maLop, thu, tiet, phong, gv, siSo };
+          });
+          console.log("✅ Đã load dữ liệu:", data.length, "dòng");
+        })
+        .catch(err => {
+          console.error("❌ Không thể load file CSV:", err);
+          alert("Không thể tải dữ liệu. Xem console.");
+        });
+    });
+
+    function capNhatDropdown(inputEl) {
+      const row = inputEl.parentElement;
+      const select = row.querySelector("select");
+      const maHPValue = inputEl.value.trim().toUpperCase();
+
+      if (maHPValue.length < 3 || data.length === 0) return;
+
+      select.innerHTML = `<option value="">-- Chọn nhóm --</option>`;
+
+      const filtered = data.filter(entry => entry.maHP === maHPValue);
+      const uniqueGroups = [...new Set(filtered.map(e => e.maLop))];
+
+      uniqueGroups.forEach(group => {
+        const option = document.createElement("option");
+        option.value = group;
+        option.textContent = group;
+        select.appendChild(option);
+      });
+
+      select.onchange = function () {
+        const selectedGroup = this.value;
+
+        if (!selectedGroup) {
+          xoaLichHoc(maHPValue);
+          const oldInfo = row.querySelector(".info");
+          if (oldInfo) oldInfo.remove();
+          return;
+        }
+
+        const matchedEntries = data.filter(e => e.maHP === maHPValue && e.maLop === selectedGroup);
+
+        if (matchedEntries.length > 0) {
+          let hasConflict = false;
+
+          for (let details of matchedEntries) {
+            const tietArr = details.tiet.match(/\d/g);
+            for (let t of tietArr) {
+              const cellId = `t${details.thu}t${t}`;
+              const cell = document.getElementById(cellId);
+
+              if (cell && cell.innerHTML.trim() !== "") {
+                const existingDivs = Array.from(cell.querySelectorAll("div strong"));
+                const isConflict = existingDivs.some(div => {
+                  const [existingMaHP] = div.textContent.split("-");
+                  return existingMaHP !== maHPValue;
+                });
+
+                if (isConflict) {
+                  alert(`❌ Xung đột lịch học tại Tiết ${t}, Thứ ${details.thu} với ${cell.textContent.trim()}`);
+                  hasConflict = true;
+                  break;
+                }
+              }
+            }
+            if (hasConflict) break;
+          }
+
+          if (hasConflict) return;
+
+          forEachCell(cell => {
+            const divs = Array.from(cell.querySelectorAll("div"));
+            divs.forEach(div => {
+              if (div.textContent.includes(maHPValue)) div.remove();
+            });
+          });
+
+          const oldInfo = row.querySelector(".info");
+          if (oldInfo) oldInfo.remove();
+
+          const infoDiv = document.createElement("div");
+          infoDiv.className = "info";
+          row.appendChild(infoDiv);
+
+          matchedEntries.forEach(details => {
+            infoDiv.innerHTML += `GV: ${details.gv}, Thứ: ${details.thu}, Tiết: ${details.tiet}, Phòng: ${details.phong}, Sĩ số: ${details.siSo}<br>`;
+            const tietArr = details.tiet.match(/\d/g);
+
+            tietArr.forEach(t => {
+              const cellId = `t${details.thu}t${t}`;
+              const cell = document.getElementById(cellId);
+              if (cell) {
+                const div = document.createElement("div");
+                div.innerHTML = `
+                  <div><strong>${details.maHP} - ${details.maLop}</strong></div>
+                  <div>Phòng: ${details.phong}</div>
+                `;
+                cell.appendChild(div);
+              }
+            });
+          });
+        }
+      };
+    }
+
+    function themDong() {
+      const container = document.getElementById("container");
+      const row = document.createElement("div");
+      row.className = "row";
+      row.innerHTML = `
+        <input type="text" placeholder="Nhập mã học phần" oninput="capNhatDropdown(this)">
+        <select>
+          <option value="">-- Chọn nhóm --</option>
+        </select>
+        <button onclick="this.parentElement.remove()">🗑</button>
+      `;
+      container.appendChild(row);
+    }
+
+    function xoaLichHoc(maHP, maLop = null) {
+      forEachCell(cell => {
+        const children = Array.from(cell.children);
+        children.forEach(child => {
+          if (child.textContent.includes(maHP) && (!maLop || child.textContent.includes(maLop))) {
+            cell.removeChild(child);
+          }
+        });
+      });
+    }
+
+    function xoaTatCa() {
+      forEachCell(cell => cell.innerHTML = "");
+      document.querySelectorAll(".info").forEach(info => info.remove());
+    }
+
+    let ketQuaLichHopLe = [];
+    let lichIndex = 0;
+
+    function layDSHocPhanTuInput() {
+      return Array.from(document.querySelectorAll('#container .row input'))
+        .map(input => input.value.trim().toUpperCase())
+        .filter((v, i, self) => v && self.indexOf(v) === i);
+    }
+
+    function sinhTatCaLich() {
+      const ds_ma_hp = layDSHocPhanTuInput();
+      if (ds_ma_hp.length === 0) {
+        alert("⚠️ Bạn chưa nhập mã học phần nào.");
+        return;
+      }
+
+      const ds_hoc_phan = {};
+      for (let maHP of ds_ma_hp) {
+        const entries = data.filter(e => e.maHP === maHP);
+        const nhomMap = {};
+
+        for (let entry of entries) {
+          const key = entry.maLop || entry.nhom;
+          if (!nhomMap[key]) nhomMap[key] = [];
+          nhomMap[key].push(entry);
+        }
+
+        ds_hoc_phan[maHP] = Object.values(nhomMap);
+      }
+
+      ketQuaLichHopLe = [];
+      const keys = Object.keys(ds_hoc_phan);
+
+      function checkConflict(a, b) {
+        return a.thu === b.thu && tachTiet(a.tiet).some(t => tachTiet(b.tiet).includes(t));
+      }
+
+      function tachTiet(tietStr) {
+        return tietStr.match(/\d+/g) || [];
+      }
+
+      function isValidSchedule(ds) {
+        for (let i = 0; i < ds.length; i++) {
+          for (let j = i + 1; j < ds.length; j++) {
+            if (checkConflict(ds[i], ds[j])) return false;
+          }
+        }
+        return true;
+      }
+
+      function backtrack(index, lichHienTai) {
+        if (index === keys.length) {
+          ketQuaLichHopLe.push([...lichHienTai]);
+          return;
+        }
+
+        const maHP = keys[index];
+        for (let nhom of ds_hoc_phan[maHP]) {
+          const newSchedule = [...lichHienTai, ...nhom];
+          if (isValidSchedule(newSchedule)) {
+            backtrack(index + 1, newSchedule);
+          }
+        }
+      }
+
+      backtrack(0, []);
+
+      if (ketQuaLichHopLe.length === 0) {
+        alert("❌ Không tìm được lịch học hợp lệ.");
+        return;
+      }
+
+      lichIndex = 0;
+      capNhatBangTheoLich(ketQuaLichHopLe[lichIndex]);
+      hienDieuHuongLich();
+    }
+
+    function capNhatBangTheoLich(ds) {
+      xoaTatCa();
+      ds.forEach(item => {
+        const tietArr = item.tiet.match(/\d/g);
+        tietArr.forEach(t => {
+          const cellId = `t${item.thu}t${t}`;
+          const cell = document.getElementById(cellId);
+          if (cell) {
+            const div = document.createElement("div");
+            div.innerHTML = `<div><strong>${item.maHP} - ${item.maLop}</strong></div><div>${item.phong}</div>`;
+            cell.appendChild(div);
+          }
+        });
+      });
+    }
+
+    function hienDieuHuongLich() {
+      const chonLich = document.getElementById("chonLich");
+      chonLich.innerHTML = `
+        <button onclick="prevLich()" ${lichIndex === 0 ? 'disabled' : ''}>⬅ Lịch trước</button>
+        <strong> Lịch ${lichIndex + 1} / ${ketQuaLichHopLe.length} </strong>
+        <button onclick="nextLich()" ${lichIndex === ketQuaLichHopLe.length - 1 ? 'disabled' : ''}>Lịch sau ➡</button>
+      `;
+    }
+
+    function prevLich() {
+      if (lichIndex > 0) {
+        lichIndex--;
+        capNhatBangTheoLich(ketQuaLichHopLe[lichIndex]);
+        hienDieuHuongLich();
+      }
+    }
+
+    function nextLich() {
+      if (lichIndex < ketQuaLichHopLe.length - 1) {
+        lichIndex++;
+        capNhatBangTheoLich(ketQuaLichHopLe[lichIndex]);
+        hienDieuHuongLich();
+      }
+    }
+  </script>
+</body>
+</html>
