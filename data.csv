@@ -422,3 +422,424 @@ CT528,02,4,123,011/K3,Tiến sỹ Phạm Trương Hồng Ngân,40
 CT528,02,4,45,011/K3,Tiến sỹ Phạm Trương Hồng Ngân,40
 CT529,01,7,123,305/C1,Thạc sỹ Huỳnh Phụng Toàn,40
 CT529,01,7,45,305/C1,Thạc sỹ Huỳnh Phụng Toàn,40
+CT051H,M01,3,678,314ATL,Tiến sỹ Nguyễn Thư Hương,40
+CT051H,M01,5,678,311ATL,Tiến sỹ Nguyễn Thư Hương,40
+CT051H,M02,2,678,314ATL,Tiến sỹ Nguyễn Thư Hương,40
+CT051H,M02,4,678,615ATL,Tiến sỹ Nguyễn Thư Hương,40
+CT052H,M01,4,1234,614ATL,Tiến sỹ Nguyễn Thư Hương,30
+CT052H,M02,3,1234,314ATL,Tiến sỹ Nguyễn Thư Hương,30
+CT052H,M03,5,1234,314ATL,Tiến sỹ Nguyễn Thư Hương,40
+CT052H,M04,2,1234,314ATL,Tiến sỹ Nguyễn Thư Hương,40
+CT053H,M01,5,1234,614ATL,Tiến sỹ Võ Văn Tài,40
+CT053H,M02,2,1234,614ATL,Tiến sỹ Võ Văn Tài,40
+CT055H,M01,2,67,614ATL,,40
+CT055H,M02,3,67,613ATL,,30
+CT055H,M03,2,67,TH05DI,Tiến sỹ Nguyễn Hữu Hòa,40
+CT056H,M01,2,89,614ATL,,30
+CT056H,M02,3,89,613ATL,,30
+CT056H,M03,3,67,TH06DI,Tiến sỹ Nguyễn Hữu Hòa,40
+CT086,01,5,123,013/K3,Thạc sỹ Vũ Duy Linh,40
+CT086,01,5,45,013/K3,Thạc sỹ Vũ Duy Linh,40
+CT086,02,6,123,013/K3,Thạc sỹ Lê Văn Quan,40
+CT086,02,6,45,013/K3,Thạc sỹ Lê Văn Quan,40
+CT086,03,4,123,013/K3,Thạc sỹ Vũ Duy Linh,40
+CT086,03,4,45,013/K3,Thạc sỹ Vũ Duy Linh,40
+CT087,01,6,678,013/K3,Thạc sỹ Vũ Duy Linh,40
+CT088,01,5,123,TH22DI,Thạc sỹ Khưu Ngọc Huyền,40
+CT088,01,6,678,303/D1,Thạc sỹ Khưu Ngọc Huyền,40
+CT093,01,2,123,013/K3,Thạc sỹ Lê Văn Quan,40
+CT093,01,2,45,013/K3,Thạc sỹ Lê Văn Quan,40
+CT093,02,3,123,013/K3,Thạc sỹ Lê Văn Quan,40
+CT093,02,3,45,013/K3,Thạc sỹ Lê Văn Quan,40
+CT094,01,5,123,TH08DI,Tiến sỹ Trần Hoàng Việt,40
+CT094,01,7,123,302/C1,Tiến sỹ Trần Hoàng Việt,40
+CT094,02,5,678,305/D2,Tiến sỹ Trần Hoàng Việt,40
+CT094,02,7,678,210/DI,Tiến sỹ Trần Hoàng Việt,40
+CT095,01,4,678,305/D1,Thạc sỹ Nguyễn Thị Thùy Linh,40
+CT095,01,5,123,TH09DI,Thạc sỹ Nguyễn Thị Thùy Linh,40
+CT096,01,2,67,307/D1,Thạc sỹ Lê Thị Diễm,40
+CT096,01,3,123,306/D1,Thạc sỹ Lê Thị Diễm,40
+CT096,02,2,89,307/D1,Thạc sỹ Lê Thị Diễm,40
+CT096,02,4,123,304/D1,Thạc sỹ Lê Thị Diễm,40
+CT100,E01,3,89,302/C1,Thạc sỹ Lê Minh Lý,5
+CT100,E01,6,67,302/C1,Thạc sỹ Lê Minh Lý,5
+CT100,E02,3,12,301/D1,Thạc sỹ Huỳnh Phụng Toàn,5
+CT100,E02,6,89,305/C1,Thạc sỹ Huỳnh Phụng Toàn,5
+CT100,E03,2,45,202/C1,Thạc sỹ Hoàng Minh Trí,5
+CT100,E03,4,67,202/C1,Thạc sỹ Hoàng Minh Trí,5
+CT100,E04,3,89,301/C1,Thạc sỹ Hồ Văn Tú,5
+CT100,E04,6,89,406/D2,Thạc sỹ Hồ Văn Tú,5
+CT100,E05,3,67,301/D1,Thạc sỹ Lê Thị Diễm,5
+CT100,E05,5,67,303/D1,Thạc sỹ Lê Thị Diễm,5
+CT100,E06,3,45,303/D1,Thạc sỹ Đặng Mỹ Hạnh,5
+CT100,E06,5,45,307/D1,Thạc sỹ Đặng Mỹ Hạnh,5
+CT100,E07,3,67,302/C1,Thạc sỹ Nguyễn Thị Diệp Chi,5
+CT100,E07,5,67,302/C1,Thạc sỹ Nguyễn Thị Diệp Chi,5
+CT100,E08,3,89,307/D1,Thạc sỹ Lê Thị Diễm,5
+CT100,E08,5,89,302/C1,Thạc sỹ Lê Thị Diễm,5
+CT100,E09,3,45,202/C1,Thạc sỹ Huỳnh Phụng Toàn,5
+CT100,E09,6,67,305/C1,Thạc sỹ Huỳnh Phụng Toàn,5
+CT100,E10,4,12,109/A3,Thạc sỹ Đặng Mỹ Hạnh,5
+CT100,E10,5,12,305/C1,Thạc sỹ Đặng Mỹ Hạnh,5
+CT101,01,2,6789,104/DI,Thạc sỹ Phan Huy Cường,40
+CT101,01,7,6789,104/DI,Thạc sỹ Phan Huy Cường,40
+CT101,02,3,1234,104/DI,Thạc sỹ Trương Thị Thanh Tuyền,40
+CT101,02,5,6789,104/DI,Thạc sỹ Trương Thị Thanh Tuyền,40
+CT102H,M01,4,1234,210/DI,Tiến sỹ Phạm Nguyên Khang,40
+CT102H,M01,5,678,210/DI,Tiến sỹ Phạm Nguyên Khang,40
+CT102H,M02,4,678,210/DI,Tiến sỹ Phạm Nguyên Khang,40
+CT102H,M02,6,6789,210/DI,Tiến sỹ Phạm Nguyên Khang,40
+CT105,01,4,678,201/D2,Thạc sỹ Nguyễn Hứa Duy Khang,60
+CT106H,M01,7,123,LAB3,Tiến sỹ Trần Thị Tố Quyên,30
+CT106H,M01,7,45,LAB3,Tiến sỹ Trần Thị Tố Quyên,30
+CT106H,M02,2,45,TH02DI,Tiến sỹ Trần Thị Tố Quyên,30
+CT106H,M02,7,678,LAB3,Tiến sỹ Trần Thị Tố Quyên,30
+CT106H,M03,6,123,210/DI,Tiến sỹ Ngô Bá Hùng,40
+CT106H,M03,6,45,210/DI,Tiến sỹ Ngô Bá Hùng,40
+CT106H,M04,5,123,211/DI,Tiến sỹ Lâm Nhựt Khang,40
+CT106H,M04,5,45,211/DI,Tiến sỹ Lâm Nhựt Khang,40
+CT108H,M01,7,123,210/DI,Tiến sỹ Phan Thượng Cang,30
+CT108H,M01,7,45,210/DI,Tiến sỹ Phan Thượng Cang,30
+CT108H,M02,6,123,211/DI,Tiến sỹ Triệu Thanh Ngoan,30
+CT108H,M02,6,45,211/DI,Tiến sỹ Triệu Thanh Ngoan,30
+CT110H,M01,3,123,LAB3,Tiến sỹ Phạm Thị Ngọc Diễm,30
+CT110H,M01,3,45,LAB3,Tiến sỹ Phạm Thị Ngọc Diễm,30
+CT110H,M02,5,123,214/DI,Tiến sỹ Nguyễn Thái Nghe,30
+CT110H,M02,5,45,214/DI,Tiến sỹ Nguyễn Thái Nghe,30
+CT111H,M01,2,6789,210/DI,Tiến sỹ Đỗ Thanh Nghị,40
+CT111H,M02,5,6789,614ATL,Tiến sỹ Đỗ Thanh Nghị,40
+CT112,01,2,678,TH01DI,Tiến sỹ Ngô Bá Hùng,40
+CT112,01,4,123,205/C1,Tiến sỹ Ngô Bá Hùng,40
+CT112,02,3,678,TH03DI,Thạc sỹ Lưu Trùng Dương,40
+CT112,02,4,678,202/D1,Thạc sỹ Lưu Trùng Dương,40
+CT112,03,4,123,307/D1,Tiến sỹ Trần Thanh Điền,40
+CT112,03,5,123,TH04DI,Tiến sỹ Trần Thanh Điền,40
+CT112,04,2,345,205/C1,Thạc sỹ Trần Duy Quang,40
+CT112,04,5,678,TH23DI,Thạc sỹ Trần Duy Quang,40
+CT112,05,3,123,TH11DI,Tiến sỹ Nguyễn Hữu Vân Long,40
+CT112,05,5,678,013/K3,Tiến sỹ Nguyễn Hữu Vân Long,40
+CT112,06,3,678,302/D1,Tiến sỹ Nguyễn Hữu Vân Long,80
+CT112,06,6,678,TH05DI,Tiến sỹ Nguyễn Hữu Vân Long,80
+CT112,07,4,678,307/D1,Tiến sỹ Lâm Nhựt Khang,40
+CT112,07,5,678,TH25DI,Tiến sỹ Lâm Nhựt Khang,40
+CT112H,M01,5,123,220/DI,Tiến sỹ Trương Quốc Định,30
+CT112H,M01,5,45,220/DI,Tiến sỹ Trương Quốc Định,30
+CT112H,M02,3,123,220/DI,Tiến sỹ Trương Quốc Định,30
+CT112H,M02,3,45,220/DI,Tiến sỹ Trương Quốc Định,30
+CT113,01,5,123,301/C1,Tiến sỹ Huỳnh Xuân Hiệp,60
+CT113H,M01,2,123,211/DI,Tiến sỹ Nguyễn Công Danh,30
+CT113H,M01,2,45,211/DI,Tiến sỹ Nguyễn Công Danh,30
+CT113H,M02,5,123,213/DI,Tiến sỹ Nguyễn Công Danh,30
+CT113H,M02,5,45,213/DI,Tiến sỹ Nguyễn Công Danh,30
+CT114H,M01,3,123,214/DI,Tiến sỹ Huỳnh Xuân Hiệp,35
+CT114H,M02,4,123,214/DI,Tiến sỹ Huỳnh Xuân Hiệp,35
+CT121,01,4,123,TH02DI,Thạc sỹ Phạm Xuân Hiền,40
+CT121,01,6,678,202/D1,Thạc sỹ Phạm Xuân Hiền,40
+CT121,02,3,123,204/D1,Thạc sỹ Phạm Xuân Hiền,40
+CT121,02,6,123,TH02DI,Thạc sỹ Phạm Xuân Hiền,40
+CT126,01,3,123,202/D1,Tiến sỹ Lê Quyết Thắng,30
+CT127,01,4,123,202/D1,Tiến sỹ Lê Quyết Thắng,30
+CT131,M01,2,345,212ATL,Tiến sỹ Trương Quốc Bảo,40
+CT131,M01,4,12,CLC1CN,Tiến sỹ Trương Quốc Bảo,40
+CT131E,01,4,123,MT3/CN,Thạc sỹ Phạm Duy Nghiệp,70
+CT131E,01,6,67,PMT/CN,Thạc sỹ Phạm Duy Nghiệp,70
+CT131E,02,3,678,PMT/CN,Thạc sỹ Phạm Duy Nghiệp,70
+CT131E,02,7,45,MT3/CN,Thạc sỹ Phạm Duy Nghiệp,70
+CT131E,03,6,123,PMT/CN,Thạc sỹ Phạm Duy Nghiệp,60
+CT131E,03,6,89,PMT/CN,Thạc sỹ Phạm Duy Nghiệp,60
+CT132,M01,5,678,307ATL,Tiến sỹ Nguyễn Cao Quí,40
+CT134,01,3,12,301/XH,Thạc sỹ Dương Thái Bình,60
+CT134,01,6,45,115/A3,Thạc sỹ Dương Thái Bình,60
+CT135,01,,,,Thạc sỹ Dương Thái Bình,100
+CT136,01,3,6789,302/MT,Thạc sỹ Trần Hữu Danh,50
+CT136E,01,2,45,207/KH,Thạc sỹ Nguyễn Thị Trâm,60
+CT136E,01,5,45,201/D2,Thạc sỹ Nguyễn Thị Trâm,60
+CT136E,02,4,45,101MTN,Thạc sỹ Nguyễn Thị Trâm,60
+CT136E,02,6,45,301/C1,Thạc sỹ Nguyễn Thị Trâm,60
+CT138,01,7,678,204/C1,Thạc sỹ Phan Thị Hồng Châu,80
+CT138,02,2,678,110/B1,Tiến sỹ Nguyễn Thanh Tùng,80
+CT138,03,7,123,205/B1,Tiến sỹ Nguyễn Thanh Tùng,90
+CT140E,01,2,678,109/B1,Thạc sỹ Phan Thị Hồng Châu,80
+CT140E,02,7,123,204/C1,Thạc sỹ Phan Thị Hồng Châu,80
+CT141,01,6,6789,405/D2,Thạc sỹ Trần Hữu Danh,50
+CT144E,01,3,45,111/A3,Tiến sỹ Nguyễn Thanh Tùng,60
+CT144E,01,6,45,102/XH,Tiến sỹ Nguyễn Thanh Tùng,60
+CT145,01,,,,Thạc sỹ Phan Thị Hồng Châu,100
+CT146,01,4,678,302/D1,Tiến sỹ Trần Nhựt Khải Hoàn,60
+CT147,01,,,,Tiến sỹ Trần Nhựt Khải Hoàn,60
+CT148E,01,6,89,203/C1,Tiến sỹ Lương Vinh Quốc Danh,70
+CT148E,01,7,345,203/C1,Tiến sỹ Lương Vinh Quốc Danh,70
+CT148E,02,2,123,203/MT,Thạc sỹ Nguyễn Minh Luân,70
+CT148E,02,3,45,115/A3,Thạc sỹ Nguyễn Minh Luân,70
+CT164,01,,,,Thạc sỹ Trần Hữu Danh,100
+CT168,01,6,6789,TTMSCN,Thạc sỹ Trần Thanh Quang,24
+CT168,02,7,6789,TTMSCN,Thạc sỹ Trần Thanh Quang,24
+CT168,03,2,6789,TTMSCN,Thạc sỹ Nguyễn Minh Luân,24
+CT168,04,5,6789,TTMSCN,Thạc sỹ Nguyễn Minh Luân,24
+CT172,01,2,123,203/K3,Thạc sỹ Nguyễn Bá Diệp,40
+CT172,01,6,123,201/K3,Thạc sỹ Nguyễn Bá Diệp,40
+CT172,02,5,123,201/K3,Thạc sỹ Huỳnh Ngọc Thái Anh,40
+CT172,02,6,123,016/K3,Thạc sỹ Huỳnh Ngọc Thái Anh,40
+CT172,03,5,123,204/D1,Thạc sỹ Võ Trí Thức,40
+CT172,03,6,678,204/D1,Thạc sỹ Võ Trí Thức,40
+CT172,H01,2,678,104HA5,Thạc sỹ Nguyễn Bá Diệp,40
+CT172,H01,6,678,303HA5,Thạc sỹ Nguyễn Bá Diệp,40
+CT173,01,2,6789,203/K3,Tiến sỹ Lâm Chí Nguyện,40
+CT173,02,6,6789,303/C1,Thạc sỹ Trần Duy Quang,40
+CT173,03,2,1234,302/D1,Tiến sỹ Nguyễn Hữu Vân Long,80
+CT173,H01,3,2345,103HA5,Thạc sỹ Nguyễn Trọng Nghĩa,40
+CT173H,M01,3,1234,615ATL,Tiến sỹ Nguyễn Thanh Khoa,30
+CT173H,M02,4,1234,615ATL,Tiến sỹ Nguyễn Thanh Khoa,30
+CT174,01,2,123,303/C1,Thạc sỹ Võ Huỳnh Trâm,80
+CT174,01,4,678,303/C1,Thạc sỹ Võ Huỳnh Trâm,80
+CT174,02,3,123,303/C1,Thạc sỹ Võ Huỳnh Trâm,80
+CT174,02,5,123,303/C1,Thạc sỹ Võ Huỳnh Trâm,80
+CT174,03,4,123,303/C1,Thạc sỹ Võ Huỳnh Trâm,80
+CT174,03,6,123,303/C1,Thạc sỹ Võ Huỳnh Trâm,80
+CT174,04,2,678,303/C1,Tiến sỹ Nguyễn Thanh Khoa,60
+CT174,04,3,678,303/C1,Tiến sỹ Nguyễn Thanh Khoa,60
+CT175,01,5,678,TH03DI,Thạc sỹ Võ Trí Thức,40
+CT175,01,6,123,302/C1,Thạc sỹ Võ Trí Thức,40
+CT175,02,2,123,TH07DI,Thạc sỹ Huỳnh Gia Khương,40
+CT175,02,5,123,403/D1,Thạc sỹ Huỳnh Gia Khương,40
+CT175,03,5,123,TH11DI,Thạc sỹ Phạm Nguyên Hoàng,40
+CT175,03,6,345,307/D1,Thạc sỹ Phạm Nguyên Hoàng,40
+CT175,04,2,678,TH23DI,Thạc sỹ Huỳnh Gia Khương,40
+CT175,04,6,123,204/D1,Thạc sỹ Huỳnh Gia Khương,40
+CT175,05,2,678,201/K3,Tiến sỹ Mã Trường Thành,40
+CT175,05,6,678,TH06DI,Tiến sỹ Mã Trường Thành,40
+CT175,06,2,678,204/D1,Thạc sỹ Phạm Xuân Hiền,40
+CT175,06,4,678,TH01DI,Thạc sỹ Phạm Xuân Hiền,40
+CT175,01,5,678,TH03DI,Thạc sỹ Võ Trí Thức,40
+CT175,01,6,123,302/C1,Thạc sỹ Võ Trí Thức,40
+CT175,02,2,123,TH07DI,Thạc sỹ Huỳnh Gia Khương,40
+CT175,02,5,123,403/D1,Thạc sỹ Huỳnh Gia Khương,40
+CT175,03,5,123,TH11DI,Thạc sỹ Phạm Nguyên Hoàng,40
+CT175,03,6,345,307/D1,Thạc sỹ Phạm Nguyên Hoàng,40
+CT175,04,2,678,TH23DI,Thạc sỹ Huỳnh Gia Khương,40
+CT175,04,6,123,204/D1,Thạc sỹ Huỳnh Gia Khương,40
+CT175,05,2,678,201/K3,Tiến sỹ Mã Trường Thành,40
+CT175,05,6,678,TH06DI,Tiến sỹ Mã Trường Thành,40
+CT175,06,2,678,204/D1,Thạc sỹ Phạm Xuân Hiền,40
+CT175,06,4,678,TH01DI,Thạc sỹ Phạm Xuân Hiền,40
+CT176,01,4,123,TH05DI,Thạc sỹ Nguyễn Công Huy,80
+CT176,01,6,678,302/D1,Thạc sỹ Nguyễn Công Huy,80
+CT176,02,5,678,TH08DI,Thạc sỹ Nguyễn Công Huy,80
+CT176,02,6,123,302/D1,Thạc sỹ Nguyễn Công Huy,80
+CT176,03,5,123,TH24DI,Tiến sỹ Lâm Chí Nguyện,40
+CT176,03,6,123,201/C1,Tiến sỹ Lâm Chí Nguyện,40
+CT176,04,5,678,201/C1,Tiến sỹ Lâm Chí Nguyện,40
+CT176,04,6,678,205/D2,Tiến sỹ Lâm Chí Nguyện,40
+CT176,05,2,123,TH11DI,Tiến sỹ Lâm Chí Nguyện,40
+CT176,05,3,123,201/C1,Tiến sỹ Lâm Chí Nguyện,40
+CT176,06,3,678,304/C1,Tiến sỹ Triệu Thanh Ngoan,80
+CT176,06,4,678,TH07DI,Tiến sỹ Triệu Thanh Ngoan,80
+CT176,07,2,123,TH06DI,Tiến sỹ Triệu Thanh Ngoan,80
+CT176,07,5,678,303/C1,Tiến sỹ Triệu Thanh Ngoan,80
+CT177,01,2,123,304/C1,Thạc sỹ Trương Thị Thanh Tuyền,40
+CT177,01,4,678,TH23DI,Thạc sỹ Trương Thị Thanh Tuyền,40
+CT177,02,3,678,TH09DI,Thạc sỹ Trương Thị Thanh Tuyền,40
+CT177,02,5,123,306/D1,Thạc sỹ Trương Thị Thanh Tuyền,40
+CT177,03,2,123,202/D1,Thạc sỹ Châu Xuân Phương,40
+CT177,03,4,678,TH02DI,Thạc sỹ Châu Xuân Phương,40
+CT177,04,4,123,TH03DI,Thạc sỹ Châu Xuân Phương,40
+CT177,04,5,123,202/D1,Thạc sỹ Châu Xuân Phương,40
+CT177,05,4,678,201/K3,Tiến sỹ Nguyễn Thanh Khoa,40
+CT177,05,5,123,TH03DI,Tiến sỹ Nguyễn Thanh Khoa,40
+CT178,01,3,123,TH22DI,Thạc sỹ Nguyễn Hoàng Việt,40
+CT178,01,5,123,016/K3,Thạc sỹ Nguyễn Hoàng Việt,40
+CT178,02,4,678,208/C1,Tiến sỹ Trần Cao Đệ,40
+CT178,02,6,678,211/DI,Tiến sỹ Trần Cao Đệ,40
+CT178,03,2,678,307/D2,Tiến sỹ Lê Văn Lâm,40
+CT178,03,6,123,220/DI,Tiến sỹ Lê Văn Lâm,40
+CT178,04,2,123,TH05DI,Tiến sỹ Trần Công Án,40
+CT178,04,6,678,201/K3,Tiến sỹ Trần Công Án,40
+CT178,05,3,678,TH25DI,Tiến sỹ Lâm Nhựt Khang,40
+CT178,05,6,678,307/D1,Tiến sỹ Lâm Nhựt Khang,40
+CT179,01,3,123,TH23DI,Thạc sỹ Lê Huỳnh Quốc Bảo,40
+CT179,01,6,123,301/C1,Thạc sỹ Lê Huỳnh Quốc Bảo,40
+CT179,02,4,678,201/C1,Thạc sỹ Lê Huỳnh Quốc Bảo,40
+CT179,02,6,678,TH11DI,Thạc sỹ Lê Huỳnh Quốc Bảo,40
+CT179,03,4,123,109/C1,Thạc sỹ Lê Huỳnh Quốc Bảo,40
+CT179,03,5,123,TH23DI,Thạc sỹ Lê Huỳnh Quốc Bảo,40
+CT179,04,2,678,TH25DI,Tiến sỹ Bùi Võ Quốc Bảo,40
+CT179,04,5,678,204/D1,Tiến sỹ Bùi Võ Quốc Bảo,40
+CT179,05,2,678,TH03DI,Thạc sỹ Lê Huỳnh Quốc Bảo,40
+CT179,05,5,678,205/D1,Thạc sỹ Lê Huỳnh Quốc Bảo,40
+CT179,H01,5,234,104HA5,Tiến sỹ Bùi Võ Quốc Bảo,40
+CT179,H01,6,234,304HA5,Tiến sỹ Bùi Võ Quốc Bảo,40
+CT180,01,3,678,TH02DI,Tiến sỹ Nguyễn Thái Nghe,38
+CT180,01,5,678,305/C1,Tiến sỹ Nguyễn Thái Nghe,38
+CT180,02,4,678,305/C1,Tiến sỹ Nguyễn Thái Nghe,38
+CT180,02,6,678,TH01DI,Tiến sỹ Nguyễn Thái Nghe,38
+CT180,03,2,678,302/C1,Tiến sỹ Nguyễn Thái Nghe,38
+CT180,03,4,123,TH01DI,Tiến sỹ Nguyễn Thái Nghe,38
+CT180,04,4,678,TH03DI,Tiến sỹ Phạm Thị Ngọc Diễm,38
+CT180,04,6,678,306/D1,Tiến sỹ Phạm Thị Ngọc Diễm,38
+CT180,05,3,678,TH04DI,Tiến sỹ Phạm Thị Ngọc Diễm,38
+CT180,05,5,678,306/D1,Tiến sỹ Phạm Thị Ngọc Diễm,38
+CT180,06,5,123,301/D1,Tiến sỹ Phạm Thị Xuân Lộc,38
+CT180,06,6,678,TH22DI,Tiến sỹ Phạm Thị Xuân Lộc,38
+CT182,01,2,123,016/K3,Tiến sỹ Nguyễn Thanh Hải,38
+CT182,01,5,678,TH22DI,Tiến sỹ Nguyễn Thanh Hải,38
+CT182,02,2,678,TH07DI,Tiến sỹ Nguyễn Thanh Hải,38
+CT182,02,6,678,305/D1,Tiến sỹ Nguyễn Thanh Hải,38
+CT182,03,3,345,406/D2,Tiến sỹ Nguyễn Thanh Hải,40
+CT182,03,4,123,TH24DI,Tiến sỹ Nguyễn Thanh Hải,40
+CT182,04,2,678,016/K3,Tiến sỹ Nguyễn Minh Khiêm,38
+CT182,04,4,123,TH09DI,Tiến sỹ Nguyễn Minh Khiêm,38
+CT182,05,3,678,016/K3,Tiến sỹ Nguyễn Minh Khiêm,38
+CT182,05,6,123,TH09DI,Tiến sỹ Nguyễn Minh Khiêm,38
+CT182,06,4,123,208/C1,Tiến sỹ Phạm Thị Xuân Lộc,38
+CT182,06,5,678,TH11DI,Tiến sỹ Phạm Thị Xuân Lộc,38
+CT182,H01,3,234,104HA5,Tiến sỹ Nguyễn Minh Khiêm,40
+CT182,H01,5,234,303HA5,Tiến sỹ Nguyễn Minh Khiêm,40
+CT188,01,2,89,011/K3,Tiến sỹ Phạm Trương Hồng Ngân,40
+CT188,01,6,678,011/K3,Tiến sỹ Phạm Trương Hồng Ngân,40
+CT188,02,2,123,305/C1,Thạc sỹ Vũ Duy Linh,40
+CT188,02,2,45,305/C1,Thạc sỹ Vũ Duy Linh,40
+CT188,03,2,67,303/D1,Thạc sỹ Vũ Duy Linh,40
+CT188,03,4,678,307/D2,Thạc sỹ Vũ Duy Linh,40
+CT188,04,2,89,303/D1,Thạc sỹ Vũ Duy Linh,40
+CT188,04,6,123,305/C1,Thạc sỹ Vũ Duy Linh,40
+CT188,H01,3,678,304HA5,Thạc sỹ Sử Kim Anh,40
+CT188,H01,4,234,102HA5,Thạc sỹ Sử Kim Anh,40
+CT188,01,2,89,011/K3,Tiến sỹ Phạm Trương Hồng Ngân,40
+CT188,01,6,678,011/K3,Tiến sỹ Phạm Trương Hồng Ngân,40
+CT188,02,2,123,305/C1,Thạc sỹ Vũ Duy Linh,40
+CT188,02,2,45,305/C1,Thạc sỹ Vũ Duy Linh,40
+CT188,03,2,67,303/D1,Thạc sỹ Vũ Duy Linh,40
+CT188,03,4,678,307/D2,Thạc sỹ Vũ Duy Linh,40
+CT188,04,2,89,303/D1,Thạc sỹ Vũ Duy Linh,40
+CT188,04,6,123,305/C1,Thạc sỹ Vũ Duy Linh,40
+CT188,H01,3,678,304HA5,Thạc sỹ Sử Kim Anh,40
+CT188,H01,4,234,102HA5,Thạc sỹ Sử Kim Anh,40
+CT189,01,4,123,016/K3,Tiến sỹ Huỳnh Quang Nghi,40
+CT189,01,6,678,TH09DI,Tiến sỹ Huỳnh Quang Nghi,40
+CT190,01,2,678,208/C1,Tiến sỹ Lưu Tiến Đạo,50
+CT190,02,3,123,201/K3,Thạc sỹ Huỳnh Gia Khương,50
+CT190,03,4,123,201/K3,Thạc sỹ Huỳnh Gia Khương,50
+CT190,04,6,678,208/C1,Tiến sỹ Trần Nguyễn Minh Thư,60
+CT190,05,6,678,403/D1,Tiến sỹ Lưu Tiến Đạo,60
+CT190,H01,3,678,102HA1,Thạc sỹ Phạm Việt Truyền,40
+CT191,01,6,12,307/D1,Tiến sỹ Nguyễn Phan Khôi,40
+CT195,01,4,678,304/D1,Thạc sỹ Đỗ Thị Xuân Quyên,60
+CT195,02,3,123,305/D1,Thạc sỹ Đỗ Thị Xuân Quyên,60
+CT196,01,4,123,305/D1,Thạc sỹ Nguyễn Thị Thùy Linh,40
+CT196,01,4,45,305/D1,Thạc sỹ Nguyễn Thị Thùy Linh,40
+CT196,02,2,678,305/D1,Thạc sỹ Nguyễn Thị Thùy Linh,40
+CT196,02,3,67,307/D1,Thạc sỹ Nguyễn Thị Thùy Linh,40
+CT196,03,2,123,303/D1,Thạc sỹ Nguyễn Thị Thùy Linh,40
+CT196,03,2,45,303/D1,Thạc sỹ Nguyễn Thị Thùy Linh,40
+CT197,01,4,678,302/C1,Tiến sỹ Đỗ Thanh Nghị,60
+CT197,01,6,123,TH01DI,Tiến sỹ Đỗ Thanh Nghị,60
+CT199,01,2,678,403/D1,Tiến sỹ Trần Việt Châu,40
+CT199,01,4,678,TH11DI,Tiến sỹ Trần Việt Châu,40
+CT199,02,3,123,TH09DI,Tiến sỹ Trần Việt Châu,40
+CT199,02,5,678,208/C1,Tiến sỹ Trần Việt Châu,40
+CT200,01,3,123,016/K3,Thạc sỹ Lê Hoàng Thảo,40
+CT200,01,4,123,TH06DI,Thạc sỹ Lê Hoàng Thảo,40
+CT200,01,3,123,016/K3,Thạc sỹ Lê Hoàng Thảo,40
+CT200,01,4,123,TH06DI,Thạc sỹ Lê Hoàng Thảo,40
+CT201E,01,,,,Thạc sỹ Phạm Xuân Hiền,3
+CT201E,02,,,,Tiến sỹ Trần Nguyễn Minh Thư,3
+CT201E,03,,,,Thạc sỹ Phạm Nguyên Hoàng,2
+CT201E,04,,,,Tiến sỹ Trần Việt Châu,2
+CT201E,05,,,,Tiến sỹ Lưu Tiến Đạo,2
+CT201E,06,,,,Thạc sỹ Võ Trí Thức,2
+CT201E,07,,,,Thạc sỹ Huỳnh Ngọc Thái Anh,2
+CT201E,08,,,,Thạc sỹ Nguyễn Bá Diệp,2
+CT201E,09,,,,Tiến sỹ Mã Trường Thành,2
+CT201E,10,,,,Thạc sỹ Huỳnh Gia Khương,2
+CT201E,11,,,,Thạc sỹ Phạm Việt Truyền,2
+CT201H,M01,3,123,202/DI,Tiến sỹ Nguyễn Hữu Hòa,30
+CT201H,M01,3,45,202/DI,Tiến sỹ Nguyễn Hữu Hòa,30
+CT202,01,2,678,304/C1,Tiến sỹ Phạm Thế Phi,80
+CT202,01,3,123,301/C1,Tiến sỹ Phạm Thế Phi,80
+CT202H,M01,2,123,210/DI,Tiến sỹ Phạm Thị Ngọc Diễm,30
+CT202H,M01,2,45,210/DI,Tiến sỹ Phạm Thị Ngọc Diễm,30
+CT203,01,3,123,TH24DI,Thạc sỹ Huỳnh Ngọc Thái Anh,30
+CT203,01,3,678,403/D1,Thạc sỹ Huỳnh Ngọc Thái Anh,30
+CT204,01,2,123,208/C1,Thạc sỹ Phan Bích Chung,40
+CT204,01,2,45,208/C1,Thạc sỹ Phan Bích Chung,40
+CT204H,M01,7,123,211/DI,Tiến sỹ Thái Minh Tuấn,40
+CT204H,M01,7,45,211/DI,Tiến sỹ Thái Minh Tuấn,40
+CT205,01,4,123,TH23DI,Thạc sỹ Phạm Ngọc Quyền,60
+CT205,01,5,678,016/K3,Thạc sỹ Phạm Ngọc Quyền,60
+CT205,02,3,678,TH24DI,Thạc sỹ Phạm Ngọc Quyền,60
+CT205,02,7,678,106/C2,Thạc sỹ Phạm Ngọc Quyền,60
+CT205,03,3,123,303/D1,Thạc sỹ Phạm Ngọc Quyền,60
+CT205,03,6,123,TH24DI,Thạc sỹ Phạm Ngọc Quyền,60
+CT205H,M01,5,123,210/DI,Tiến sỹ Đỗ Thanh Nghị,30
+CT205H,M01,5,45,210/DI,Tiến sỹ Đỗ Thanh Nghị,30
+CT205H,M02,3,123,210/DI,Tiến sỹ Đỗ Thanh Nghị,30
+CT205H,M02,3,45,210/DI,Tiến sỹ Đỗ Thanh Nghị,30
+CT206H,M01,4,123,LAB3,Tiến sỹ Trần Công Án,30
+CT206H,M01,4,45,LAB3,Tiến sỹ Trần Công Án,30
+CT206H,M02,5,123,LAB3,Tiến sỹ Trần Công Án,30
+CT206H,M02,5,45,LAB3,Tiến sỹ Trần Công Án,30
+CT207,01,3,123,TH01DI,Tiến sỹ Ngô Bá Hùng,80
+CT207,01,5,678,301/C1,Tiến sỹ Ngô Bá Hùng,80
+CT208H,M01,3,123,213/DI,Tiến sỹ Trần Công Án,40
+CT208H,M01,3,45,213/DI,Tiến sỹ Trần Công Án,40
+CT209H,M01,6,123,213/DI,Tiến sỹ Trần Thanh Điền,40
+CT209H,M01,6,45,213/DI,Tiến sỹ Trần Thanh Điền,40
+CT210,01,3,345,301/D1,Thạc sỹ Phạm Nguyên Hoàng,30
+CT210,01,4,678,TH09DI,Thạc sỹ Phạm Nguyên Hoàng,30
+CT211,01,2,678,TH04DI,Thạc sỹ Phạm Hữu Tài,60
+CT211,01,3,678,202/D1,Thạc sỹ Phạm Hữu Tài,60
+CT211,02,3,678,TH08DI,Thạc sỹ Nguyễn Trọng Nghĩa,60
+CT211,02,5,678,302/D1,Thạc sỹ Nguyễn Trọng Nghĩa,60
+CT212,01,4,678,204/D1,Thạc sỹ Bùi Minh Quân,40
+CT212,01,5,678,TH02DI,Thạc sỹ Bùi Minh Quân,40
+CT215H,01,,,,Tiến sỹ Lâm Nhựt Khang,10
+CT216,01,3,123,TH05DI,Tiến sỹ Mã Trường Thành,30
+CT216,01,4,678,203/D1,Tiến sỹ Mã Trường Thành,30
+CT216H,01,,,,Tiến sỹ Lâm Nhựt Khang,10
+CT219,01,3,123,305/C1,Tiến sỹ Lâm Nhựt Khang,30
+CT219,01,3,45,305/C1,Tiến sỹ Lâm Nhựt Khang,30
+CT221,01,3,123,208/C1,Thạc sỹ Nguyễn Công Huy,40
+CT221,01,5,123,TH10DI,Thạc sỹ Nguyễn Công Huy,40
+CT222,01,5,678,304/C1,Tiến sỹ Phạm Thế Phi,80
+CT222,01,6,678,304/C1,Tiến sỹ Phạm Thế Phi,80
+CT222,02,4,123,304/C1,Tiến sỹ Phạm Thế Phi,80
+CT222,02,5,123,304/C1,Tiến sỹ Phạm Thế Phi,80
+CT223,01,5,123,303/D1,Tiến sỹ Trương Minh Thái,60
+CT223,01,6,678,TH07DI,Tiến sỹ Trương Minh Thái,60
+CT223,02,2,678,TH06DI,Tiến sỹ Trương Minh Thái,60
+CT223,02,3,123,203/D1,Tiến sỹ Trương Minh Thái,60
+CT225,01,4,123,302/C1,Tiến sỹ Đỗ Thanh Nghị,60
+CT226E,01,,,,Tiến sỹ Ngô Bá Hùng,3
+CT227,01,3,678,TH22DI,Tiến sỹ Đỗ Thanh Nghị,40
+CT227,01,6,678,307/D2,Tiến sỹ Đỗ Thanh Nghị,40
+CT228,01,2,678,TH09DI,Tiến sỹ Nguyễn Hữu Vân Long,40
+CT228,01,5,123,203/K3,Tiến sỹ Nguyễn Hữu Vân Long,40
+CT232,01,5,678,307/D1,Tiến sỹ Trần Thanh Điền,40
+CT232,01,7,123,TH04DI,Tiến sỹ Trần Thanh Điền,40
+CT233,01,4,678,301/C1,Tiến sỹ Ngô Bá Hùng,80
+CT233,01,5,123,TH01DI,Tiến sỹ Ngô Bá Hùng,80
+CT233,02,2,678,TH02DI,Thạc sỹ Bùi Minh Quân,40
+CT233,02,4,123,204/D1,Thạc sỹ Bùi Minh Quân,40
+CT239E,01,,,,Thạc sỹ Phan Huy Cường,12
+CT239E,02,,,,Thạc sỹ Châu Xuân Phương,12
+CT241,01,4,678,TH10DI,Tiến sỹ Trương Xuân Việt,40
+CT241,01,6,678,203/K3,Tiến sỹ Trương Xuân Việt,40
+CT242,01,4,678,205/C1,Tiến sỹ Huỳnh Xuân Hiệp,40
+CT242,01,5,678,TH01DI,Tiến sỹ Huỳnh Xuân Hiệp,40
+CT243H,M01,3,678,211/DI,Tiến sỹ Nguyễn Công Danh,40
+CT243H,M01,4,678,211/DI,Tiến sỹ Nguyễn Công Danh,40
+CT246,01,2,123,301/D1,Thạc sỹ Ông Thị Mỹ Linh,40
+CT246,01,3,123,TH10DI,Thạc sỹ Ông Thị Mỹ Linh,40
+CT250E,01,,,,Tiến sỹ Nguyễn Thanh Khoa,5
+CT250H,M01,,,,Tiến sỹ Phan Phương Lan,30
+CT250H,M02,,,,Tiến sỹ Trương Minh Thái,30
+CT251,01,5,678,201/K3,Tiến sỹ Nguyễn Công Danh,40
+CT251,01,6,678,TH03DI,Tiến sỹ Nguyễn Công Danh,40
+CT255,01,3,678,109/C1,Tiến sỹ Nguyễn Thanh Hải,40
+CT255,01,6,123,TH10DI,Tiến sỹ Nguyễn Thanh Hải,40
+CT255,02,4,678,TH24DI,Tiến sỹ Nguyễn Thanh Hải,40
+CT255,02,5,123,201/C1,Tiến sỹ Nguyễn Thanh Hải,40
+CT258,01,4,678,203/K3,Tiến sỹ Trần Nguyễn Minh Thái,40
+CT258,01,5,89,203/K3,Tiến sỹ Trần Nguyễn Minh Thái,40
+CT258,02,3,678,TH10DI,Tiến sỹ Trần Nguyễn Minh Thái,40
+CT258,02,5,67,203/K3,Tiến sỹ Trần Nguyễn Minh Thái,40
