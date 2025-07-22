@@ -1,4 +1,5 @@
-<!--CODE CUA CHAPGPT-->
+<!--DUOC THUC HIEN BOI CHATGPT-->
+
 
 <!DOCTYPE html>
 <html lang="vi">
@@ -99,6 +100,15 @@
       border-radius: 4px;
       font-size: 14px;
     }
+    .nhom-lop-block {
+      background-color: #dff0ff;
+      border: 1px solid #3498db;
+      border-radius: 6px;
+      padding: 4px 6px;
+      margin-bottom: 4px;
+      text-align: left;
+}
+
   </style>
 </head>
 
@@ -137,6 +147,7 @@
   </table>
 
   <script>
+    let file = "./data1.csv"
     const tbody = document.querySelector("#tkb tbody");
 
     function forEachCell(callback) {
@@ -167,7 +178,7 @@
     let data = [];
 
     window.addEventListener("DOMContentLoaded", () => {
-      fetch("./data.csv")
+      fetch(file)
         .then(res => res.text())
         .then(csv => {
           const lines = csv.trim().split("\n").slice(1);
@@ -257,7 +268,7 @@
           row.appendChild(infoDiv);
 
           matchedEntries.forEach(details => {
-            infoDiv.innerHTML += `GV: ${details.gv}, Thứ: ${details.thu}, Tiết: ${details.tiet}, Phòng: ${details.phong}, Sĩ số: ${details.siSo}<br>`;
+            infoDiv.innerHTML += `GV: ${details.gv}, Nhóm ${details.maLop}, Phòng: ${details.phong}, Sĩ số: ${details.siSo}<br>`;
             const tietArr = details.tiet.match(/\d/g);
 
             tietArr.forEach(t => {
@@ -265,11 +276,13 @@
               const cell = document.getElementById(cellId);
               if (cell) {
                 const div = document.createElement("div");
-                div.innerHTML = `
-                  <div><strong>${details.maHP} - ${details.maLop}</strong></div>
-                  <div>Phòng: ${details.phong}</div>
-                `;
-                cell.appendChild(div);
+                  div.className = "nhom-lop-block";
+                  div.innerHTML = `
+                    <div><strong>${details.maHP} - ${details.maLop}</strong></div>
+                    <div>Phòng: ${details.phong}</div>
+                  `;
+                  cell.appendChild(div);
+
               }
             });
           });
@@ -345,8 +358,25 @@
       }
 
       function tachTiet(tietStr) {
-        return tietStr.match(/\d+/g) || [];
+        const result = new Set();
+
+        tietStr.split(",").forEach(part => {
+          part = part.trim();
+          if (part.includes("-")) {
+            const [start, end] = part.split("-").map(Number);
+            for (let i = start; i <= end; i++) {
+              result.add(i.toString());
+            }
+          } else {
+            for (let char of part) {
+              if (!isNaN(char)) result.add(char);
+            }
+          }
+        });
+
+        return Array.from(result);
       }
+
 
       function isValidSchedule(ds) {
         for (let i = 0; i < ds.length; i++) {
@@ -386,6 +416,15 @@
 
     function capNhatBangTheoLich(ds) {
       xoaTatCa();
+
+      // Tạo map để gom nhóm theo mã học phần
+      const groupByMaHP = {};
+      ds.forEach(item => {
+        if (!groupByMaHP[item.maHP]) groupByMaHP[item.maHP] = [];
+        groupByMaHP[item.maHP].push(item);
+      });
+
+      // Cập nhật bảng thời khóa biểu
       ds.forEach(item => {
         const tietArr = item.tiet.match(/\d/g);
         tietArr.forEach(t => {
@@ -393,12 +432,33 @@
           const cell = document.getElementById(cellId);
           if (cell) {
             const div = document.createElement("div");
-            div.innerHTML = `<div><strong>${item.maHP} - ${item.maLop}</strong></div><div>${item.phong}</div>`;
-            cell.appendChild(div);
+              div.className = "nhom-lop-block";
+              div.innerHTML = `<div><strong>${item.maHP} - ${item.maLop}</strong></div><div>Phòng: ${item.phong}</div>`;
+              cell.appendChild(div);
+
           }
         });
       });
+
+      // Cập nhật info bên dưới input/select
+      const rows = document.querySelectorAll("#container .row");
+      rows.forEach(row => {
+        const input = row.querySelector("input");
+        const maHP = input.value.trim().toUpperCase();
+        const oldInfo = row.querySelector(".info");
+        if (oldInfo) oldInfo.remove();
+
+        if (groupByMaHP[maHP]) {
+          const infoDiv = document.createElement("div");
+          infoDiv.className = "info";
+          groupByMaHP[maHP].forEach(details => {
+            infoDiv.innerHTML += `GV: ${details.gv}, Nhóm ${details.maLop}, Phòng: ${details.phong}, Sĩ số: ${details.siSo}<br>`;
+          });
+          row.appendChild(infoDiv);
+        }
+      });
     }
+
 
     function hienDieuHuongLich() {
       const chonLich = document.getElementById("chonLich");
