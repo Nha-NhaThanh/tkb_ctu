@@ -137,7 +137,7 @@
         <div id="thuCongContainer">
             <!-- Các học phần thủ công sẽ được thêm ở đây -->
         </div>
-        <button onclick="themThuCongRow()">➕ Thêm học phần</button>
+        <button onclick="themThuCongRow()">➕ Thêm dữ liệu học phần</button>
         <button onclick="capNhatDuLieuThuCong()" style="margin-left: 10px;">✔ Xác nhận dữ liệu</button>
     </div>
 
@@ -242,6 +242,14 @@
                 const matchedEntries = data.filter(e => e.maHP === maHPValue && e.maLop === selectedGroup);
 
                 if (matchedEntries.length > 0) {
+                    // Xóa lịch cũ trước khi kiểm tra xung đột
+                    forEachCell(cell => {
+                        const divs = Array.from(cell.querySelectorAll("div"));
+                        divs.forEach(div => {
+                            if (div.textContent.includes(maHPValue)) div.remove();
+                        });
+                    });
+
                     let hasConflict = false;
 
                     for (let details of matchedEntries) {
@@ -268,6 +276,7 @@
                     }
 
                     if (hasConflict) return;
+
 
                     forEachCell(cell => {
                         const divs = Array.from(cell.querySelectorAll("div"));
@@ -394,19 +403,20 @@
                 }
 
                 const lines = textarea.split("\n");
-                let pendingRow = null;
-                let lastMaLop = ""; // Lưu nhóm lớp gần nhất
+                let lastMaLop = "";
+                let pendingRows = [];
 
                 for (let j = 0; j < lines.length; j++) {
                     const line = lines[j].trim();
 
                     // Nếu là dòng tên giảng viên (không chứa tab và không có số)
                     if (!line.includes("\t") && !/\d/.test(line)) {
-                        if (pendingRow) {
-                            pendingRow.gv = line;
-                            parsed.push(pendingRow);
-                            pendingRow = null;
+                        // Gán giảng viên cho tất cả pendingRows
+                        for (let k = 0; k < pendingRows.length; k++) {
+                            pendingRows[k].gv = line;
+                            parsed.push(pendingRows[k]);
                         }
+                        pendingRows = [];
                         continue;
                     }
 
@@ -419,32 +429,32 @@
                         siSo = parts[4];
                         tiet = parts[5].replace(/[^0-9]/g, "");
                         phong = parts[6];
-                        lastMaLop = maLop; // Cập nhật nhóm lớp gần nhất
+                        lastMaLop = maLop;
                     } else if (parts.length >= 6 && parts[5] !== "x") {
-                        // Không có nhóm lớp, lấy nhóm lớp gần nhất
                         maLop = lastMaLop;
                         thu = parts[0];
                         siSo = parts[3];
                         tiet = parts[4].replace(/[^0-9]/g, "");
                         phong = parts[5];
                     } else {
-                        continue; // Bỏ qua dòng không hợp lệ
+                        continue;
                     }
 
-                    pendingRow = {
+                    // Đẩy vào pendingRows với gv rỗng
+                    pendingRows.push({
                         maHP,
                         maLop,
                         thu,
                         siSo,
                         tiet,
                         phong,
-                        gv: "" // sẽ bổ sung sau
-                    };
+                        gv: ""
+                    });
                 }
-                // Nếu còn dòng chưa có giảng viên (trường hợp cuối cùng)
-                if (pendingRow) {
-                    alert(`❌ Dữ liệu học phần "${maHP}" thiếu tên giảng viên ở dòng cuối.`);
-                    return;
+
+                // Nếu còn các dòng chưa gán giảng viên => giữ gv là ""
+                for (let k = 0; k < pendingRows.length; k++) {
+                    parsed.push(pendingRows[k]);
                 }
             }
 
