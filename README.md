@@ -41,5 +41,5 @@ Sau khi chọn được thời khóa biểu ưng ý, hãy kiểm tra lại thôn
 ---
 
 ## Cuối cùng
-Trang web được xây dựng bởi ChatGPT, hãy cảm ơn nó. Mình không có học nhiều về web, nên nếu có vấn đề gì về code, vui lòng hãy đóng góp.
+Trang web được xây dựng bởi ChatGPT, hãy cảm ơn ChatGPT. Mình không có học nhiều về web, nên nếu có vấn đề gì về code, vui lòng hãy đóng góp.
 
